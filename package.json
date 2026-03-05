@@ -1,7 +1,7 @@
 {
   "name": "ccflabs-app",
-  "version": "4.0.0",
-  "description": "Aplicação fictícia da CCFLabs com logo e identidade visual",
+  "version": "5.0.0",
+  "description": "Aplicação fictícia da CCFLabs com portfólio de serviços",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
