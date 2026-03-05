@@ -49,7 +49,7 @@ stages:
     - task: AzureWebAppContainer@1
       displayName: Deploy to Azure Web App
       inputs:
-        azureSubscription: 'MinhaServiceConnection'   # conexão ARM
-        appName: 'hello-node14-app'                   # nome do App Service
+        azureSubscription: 'webapp-deploy'   # conexão ARM
+        appName: 'ccflabsnode14'                   # nome do App Service
         containers: '$(containerRegistry)/$(imageRepository):$(tag)'
 
