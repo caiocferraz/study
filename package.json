@@ -1,0 +1,14 @@
+{
+  "name": "hello-node14",
+  "version": "1.0.0",
+  "description": "Hello World em Node 14 para laboratório",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Caio",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
