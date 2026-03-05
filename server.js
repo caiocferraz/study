@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 443;
 
 // Middleware para servir HTML estilizado
 app.get('/', (req, res) => {
