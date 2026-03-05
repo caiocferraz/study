@@ -37,3 +37,19 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+
+- stage: Deploy
+  displayName: Deploy stage
+  jobs:
+  - job: Deploy
+    displayName: Deploy
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: AzureWebAppContainer@1
+      displayName: Deploy to Azure Web App
+      inputs:
+        azureSubscription: 'MinhaServiceConnection'   # conexão ARM
+        appName: 'hello-node14-app'                   # nome do App Service
+        containers: '$(containerRegistry)/$(imageRepository):$(tag)'
+
