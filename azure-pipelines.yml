@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '3f3e9809-1a2d-44e3-b639-99925ec543cd'
+  dockerRegistryServiceConnection: '5e9633d8-fbc4-47f2-968e-182675bdff94'
   imageRepository: 'hellonode14'
   containerRegistry: 'clelabs.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
