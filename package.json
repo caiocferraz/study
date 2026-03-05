@@ -1,7 +1,7 @@
 {
   "name": "hello-node14",
-  "version": "1.0.0",
-  "description": "Hello World em Node 14 para laboratório",
+  "version": "2.0.0",
+  "description": "Hello World v2 em Node 14 com estilo",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
