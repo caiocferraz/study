@@ -1,7 +1,7 @@
 {
   "name": "ccflabs-app",
-  "version": "3.0.0",
-  "description": "Aplicação fictícia da CCFLabs, consultoria Microsoft Azure",
+  "version": "4.0.0",
+  "description": "Aplicação fictícia da CCFLabs com logo e identidade visual",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
