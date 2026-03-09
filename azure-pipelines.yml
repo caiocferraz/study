@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '364b4372-359c-4d50-bd7b-28881b2d3c11'
+  dockerRegistryServiceConnection: 'f3fc26ec-6ad2-47d9-9a97-3d59574c3260'
   imageRepository: 'frontstudy'
   containerRegistry: 'ccflabs.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
