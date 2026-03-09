@@ -49,7 +49,7 @@ stages:
     - task: AzureWebAppContainer@1
       displayName: Deploy to Azure Web App
       inputs:
-        azureSubscription: 'webapp-deploy'   # conexão ARM
-        appName: 'ccflabsnode14'                   # nome do App Service
+        azureSubscription: 'ARM-Deployments'   # conexão ARM
+        appName: 'ccflabs-front'                   # nome do App Service
         containers: '$(containerRegistry)/$(imageRepository):$(tag)'
 
