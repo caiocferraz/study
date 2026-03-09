@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
       <title>CCFLabs - Consultoria Azure</title>
       <style>
         body {
-          background: #f4f4f4;
+          background: #392f96;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           margin: 0;
           padding: 0;
