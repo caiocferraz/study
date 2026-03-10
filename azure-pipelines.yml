@@ -11,10 +11,10 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '5e9633d8-fbc4-47f2-968e-182675bdff94'
-  imageRepository: 'hellonode14'
-  containerRegistry: 'clelabs.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.BuildId)'
+  imageRepository: 'frontstudy' # nome da imagem
+  containerRegistry: 'ccflabs.azurecr.io' # nome do container registry
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile' # caminho do Dockerfile
+  tag: '$(Build.BuildId)'   
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -49,7 +49,7 @@ stages:
     - task: AzureWebAppContainer@1
       displayName: Deploy to Azure Web App
       inputs:
-        azureSubscription: 'webapp-deploy'   # conexão ARM
-        appName: 'ccflabsnode14'                   # nome do App Service
+        azureSubscription: 'webapp-deploy'   # conexão ARM estabelecida durante a criação do pipeline
+        appName: 'frontstudy'                   # nome do App Service
         containers: '$(containerRegistry)/$(imageRepository):$(tag)'
 
