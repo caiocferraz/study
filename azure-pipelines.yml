@@ -52,6 +52,6 @@ stages:
       displayName: Deploy to Azure Web App
       inputs:
         azureSubscription: 'study-deployments'   # conexão ARM estabelecida durante a criação do pipeline
-        appName: 'ccflabs-front'                   # nome do App Service
+        appName: 'ccflabs-front-1'                   # nome do App Service
         containers: '$(containerRegistry)/$(imageRepository):$(tag)'
 
