@@ -10,16 +10,11 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '5e9633d8-fbc4-47f2-968e-182675bdff94'
+  dockerRegistryServiceConnection: '48c6db67-004a-4ea3-af6b-24eed888d054'
   imageRepository: 'frontstudy' # nome da imagem
   containerRegistry: 'ccflabs.azurecr.io' # nome do container registry
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile' # caminho do Dockerfile
   tag: '$(Build.BuildId)'   
-  dockerRegistryServiceConnection: 'f3fc26ec-6ad2-47d9-9a97-3d59574c3260'
-  imageRepository: 'frontstudy'
-  containerRegistry: 'ccflabs.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.BuildId)'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -54,9 +49,7 @@ stages:
     - task: AzureWebAppContainer@1
       displayName: Deploy to Azure Web App
       inputs:
-        azureSubscription: 'webapp-deploy'   # conexão ARM estabelecida durante a criação do pipeline
+        azureSubscription: 'study-deployments'   # conexão ARM estabelecida durante a criação do pipeline
         appName: 'frontstudy'                   # nome do App Service
-        azureSubscription: 'ARM-Deployments'   # conexão ARM
-        appName: 'ccflabs-front'                   # nome do App Service
         containers: '$(containerRegistry)/$(imageRepository):$(tag)'
 
