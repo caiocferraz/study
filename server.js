@@ -74,7 +74,7 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <header>
-        <img src="https://ccflabs.com.br/logo.png" alt="CCFLabs Logo">
+        <h2 style="margin: 0; font-size: 2.5em;">CCFLabs</h2>
         <h1>Welcome to CCFLabs - Azure Consultancy</h1>
       </header>
       
