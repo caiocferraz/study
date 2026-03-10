@@ -45,7 +45,8 @@ stages:
   - job: Deploy
     displayName: Deploy
     pool:
-      vmImage: $(vmImageName)
+      name: AzureVM
+      #vmImage: $(vmImageName)
     steps:
     - task: AzureWebAppContainer@1
       displayName: Deploy to Azure Web App
