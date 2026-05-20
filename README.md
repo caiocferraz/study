@@ -1,4 +1,4 @@
-# study
+# CCFLabs Azure Landing Page
 
 Este repositório contém uma aplicação Node.js/Express simples da **CCFLabs** que serve uma página institucional estática.
 
